@@ -1,0 +1,241 @@
+@import 'datePicker';
+// Full style of home page
+.home-page-container{
+  background-color: $white-color;
+  .weather{
+    *:not(.degree){
+      margin-left: 10px;
+    }
+  }
+  .main-side-bar{
+    @include lightGrayBG(0);
+    padding-right: 0;
+    .logo{
+      max-width: 200px;
+    }
+    .profile-summary{
+      img{
+        max-width: 130px;
+        max-height: 130px;
+        border-radius: 100%;
+        border: 1px solid $black-color;
+        &:hover{
+          cursor: pointer;
+          opacity: 0.6;
+        }
+      }
+      .profile-name{
+        font-size: calc(#{$main-font-size} + 4px);
+      }
+      .profile-role{
+        font-size: calc(#{$main-font-size} + 2px);
+      }
+    }
+    nav{
+      margin-top: 50px;
+      .nav-link{
+        &:hover{
+          cursor: pointer;
+          color: $black-color !important;
+          text-shadow: 0 0 15px $dark-gray-color;
+        }
+      }
+    }
+    .feedback-container{
+      bottom: 25px;
+    }
+  }
+  .page-content{
+    padding-left: 0;
+    .main-cover{
+      height: 260px;
+      margin-bottom: 30px;
+      .cover-photo{
+        object-fit: cover;
+      }
+      .cover-overlay{
+        .cover-quotes{
+          background-color: $white-color;
+          margin: 0 5%;
+          padding: 20px;
+          border-radius: $main-border-radius;
+          .quotes-icon{
+            color: $bran-primary-color;
+            &:first-of-type{
+              webkit-transform: scaleX(-1);
+              transform: scaleX(-1);
+              font-size: 24px;
+              top: -8px;
+              left: 20px;
+            }
+            &:last-of-type{
+              font-size: 32px;
+              bottom: -15px;
+              right: 10px;
+            }
+          }
+        }
+      }
+    }
+    .portal-search{
+      .form-control{
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding-right: 30px;
+      }
+      .search-icon{
+        top: 8px;
+        right: 0;
+        font-size: 20px;
+      }
+    }
+    .departments{
+      .content-slider{
+        height: 145px;
+        visibility: hidden;
+        .dept-photo{
+          @include lightGrayBG;
+          height: 110px;
+          margin-top: 2px;
+          &:hover{
+            cursor: pointer;
+            box-shadow: 0 0 5px $dark-gray-color;
+          }
+          img{ max-width: 100%}
+        }
+      }
+      .lSAction{
+        a{ @include drawSliderActions($white-color); }
+      }
+    }
+    .recent-updates{
+      .updates-container{
+        @include lightGrayBG;
+      }
+      .item{
+        background-color: $white-color;
+        border-radius: 0 0 $main-border-radius $main-border-radius;
+        .update-cover{
+          img{
+            border-radius: $main-border-radius $main-border-radius 0 0;
+            object-fit: cover;
+            max-width: 100%
+          }
+        }
+        .update-content{
+          padding: 0 10px;
+          .font-italic{ font-style: italic; }
+          h3{font-size: $main-font-size;}
+        }
+        &:hover{
+          cursor: pointer;
+          box-shadow: 0 0 5px $dark-gray-color;
+        }
+      }
+      .content-slider{
+        height: 285px;
+        visibility: hidden;
+      }
+      .lSAction{
+        a{ @include drawSliderActions($light-gray-color); }
+      }
+      .lSPager { display: block;}
+    }
+    .our-performance{
+      .item{
+        .item-content{
+          padding: 0 15px;
+          line-height: 20px;
+        }
+      }
+    }
+    .hotline-numbers{
+      @include lightGrayBG;
+      .handset-icon{
+        top: -16px;
+        opacity: 0.5;
+        width: 71px;
+        height: 79px;
+        margin-right: 10px;
+        background: url('../../assets/img/headSet-icon.png') center center no-repeat;
+      }
+    }
+    .instgram-feeds{
+      .main-heading {
+        @include mainHeading($alignment:center);
+      }
+      .instgram-icon{
+        bottom: -5px;
+        right: 5px;
+        font-size: 42px;
+        color: $bran-secondary-color;
+      }
+      .feeds-container{
+        .feed-item {
+          height: 200px;
+          img {
+            border-radius: $main-border-radius;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .upcomming-pray-time{
+      background: url('../../assets/img/SalahIcon.png') center center no-repeat;
+      background-size: 70px;
+      .cover-overlay { border-radius: $main-border-radius; }
+      .main { font-size: calc( (#{$main-font-size} * 2) - 2px); }
+    }
+    .promotions{
+      .content-slider{
+        height: 180px;
+        visibility: hidden;
+      }
+      .main-heading {
+        @include mainHeading($alignment:center);
+      }
+      .outline-container{
+        max-width: 30%;
+        img {
+          max-width: 100%;
+        }
+      }
+      .offer{font-size: $heading-font-size;}
+      .lSAction{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 40px;
+      }
+    }
+    .new-joinees{
+      .content-slider{
+        height: 90px;
+        visibility: hidden;
+        .item{
+          &:hover{
+            cursor: pointer;
+            img{opacity: 0.6;}
+          }
+        }
+        img{
+          border-radius: 100%;
+          max-width: 90px;
+          margin-right: 15px;
+        }
+      }
+      .lSPager { display: block; margin: top 25px;}
+      .lSAction { display: none!important;}
+    }
+    .polls{
+      .actions{
+        button{
+          width: 125px;
+        }
+      }
+    }
+  }
+}

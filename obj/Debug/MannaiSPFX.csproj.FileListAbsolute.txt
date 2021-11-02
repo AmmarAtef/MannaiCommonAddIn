@@ -1,0 +1,5 @@
+C:\Users\Administrator\source\repos\SharePointProject5\MannaiSPFX\bin\Debug\MannaiSPFX.pdb
+C:\Users\Administrator\source\repos\SharePointProject5\MannaiSPFX\obj\Debug\MannaiSPFX.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\SharePointProject5\MannaiSPFX\obj\Debug\MannaiSPFX.dll
+C:\Users\Administrator\source\repos\SharePointProject5\MannaiSPFX\obj\Debug\MannaiSPFX.pdb
+C:\Users\Administrator\source\repos\SharePointProject5\MannaiSPFX\obj\Debug\MannaiSPFX.csproj.AssemblyReference.cache

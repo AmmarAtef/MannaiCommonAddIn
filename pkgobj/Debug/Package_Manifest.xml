@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="d3ae2d1e-d039-420d-92c2-b27fd44f0d96" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="MannaiSPFX_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

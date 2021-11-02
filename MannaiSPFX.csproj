@@ -1,0 +1,171 @@
+﻿<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCF1A75D-211C-4F05-A2FB-4854B13FB3AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MannaiSPFX</RootNamespace>
+    <AssemblyName>MannaiSPFX</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.1</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.2</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{5740c17e-aa78-4849-902b-cc13594e339b}</AppFeaturePartId>
+    <WspPartId>{01a5097d-5f0a-40a8-8d16-16fdf129d51d}</WspPartId>
+    <WorkflowPartId>{ec7b3da3-0cf2-4f49-a4bb-39fa33915d73}</WorkflowPartId>
+    <CspkgPartId>{000ef926-0d9d-42dd-a0d2-7aaf350cd9bb}</CspkgPartId>
+    <SqlPackagePartId>{246bbb6e-a737-43b3-9d76-064096172da8}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\assets\css\libs\all.css" />
+    <Content Include="Content\assets\css\libs\bootstrap.min.css" />
+    <Content Include="Content\assets\css\libs\jquery-ui.css" />
+    <Content Include="Content\assets\css\libs\lightslider.css" />
+    <Content Include="Content\assets\css\main.css" />
+    <Content Include="Content\assets\css\partials\basic.css" />
+    <Content Include="Content\assets\fonts\iconFonts\fa-brands-400.svg" />
+    <Content Include="Content\assets\fonts\iconFonts\fa-regular-400.svg" />
+    <Content Include="Content\assets\fonts\iconFonts\fa-solid-900.svg" />
+    <Content Include="Content\assets\img\calender-controls.png" />
+    <Content Include="Content\assets\img\departments\dep-1.jpg" />
+    <Content Include="Content\assets\img\departments\dep-2.jpg" />
+    <Content Include="Content\assets\img\departments\dep-3.jpg" />
+    <Content Include="Content\assets\img\departments\dep-4.jpg" />
+    <Content Include="Content\assets\img\departments\dep-5.jpg" />
+    <Content Include="Content\assets\img\departments\dep-6.jpg" />
+    <Content Include="Content\assets\img\dummy\agoda-logo.png" />
+    <Content Include="Content\assets\img\dummy\insgram-feeds.jpg" />
+    <Content Include="Content\assets\img\dummy\mainCover.jpg" />
+    <Content Include="Content\assets\img\dummy\profilePhoto.jpg" />
+    <Content Include="Content\assets\img\dummy\recent-update.jpg" />
+    <Content Include="Content\assets\img\dummy\weatherIcon.png" />
+    <Content Include="Content\assets\img\headSet-icon.png" />
+    <Content Include="Content\assets\img\mainBg.png" />
+    <Content Include="Content\assets\img\performance\1.png" />
+    <Content Include="Content\assets\img\performance\2.png" />
+    <Content Include="Content\assets\img\performance\3.png" />
+    <Content Include="Content\assets\img\performance\4.png" />
+    <Content Include="Content\assets\img\performance\5.png" />
+    <Content Include="Content\assets\img\performance\6.png" />
+    <Content Include="Content\assets\img\QTerminalsLogo.png" />
+    <Content Include="Content\assets\img\SalahIcon.png" />
+    <Content Include="Content\assets\js\libs\jquery-ui.min.js" />
+    <Content Include="Content\assets\js\libs\jquery.min.js" />
+    <Content Include="Content\assets\js\libs\lightslider.js" />
+    <Content Include="Content\assets\js\main.js" />
+    <Content Include="Pages\home.aspx" />
+    <Content Include="Pages\home\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\components.js" />
+    <Content Include="Scripts\jquery-3.5.0.js" />
+    <Content Include="Scripts\jquery-3.5.0.min.js" />
+    <Content Include="Scripts\jquery-3.5.0.slim.js" />
+    <Content Include="Scripts\jquery-3.5.0.slim.min.js" />
+    <Content Include="Scripts\pnp.min.js" />
+    <None Include="Content\assets\fonts\Calibri.ttf" />
+    <None Include="Content\assets\fonts\iconFonts\fa-brands-400.eot" />
+    <None Include="Content\assets\fonts\iconFonts\fa-brands-400.ttf" />
+    <None Include="Content\assets\fonts\iconFonts\fa-brands-400.woff" />
+    <None Include="Content\assets\fonts\iconFonts\fa-brands-400.woff2" />
+    <None Include="Content\assets\fonts\iconFonts\fa-regular-400.eot" />
+    <None Include="Content\assets\fonts\iconFonts\fa-regular-400.ttf" />
+    <None Include="Content\assets\fonts\iconFonts\fa-regular-400.woff" />
+    <None Include="Content\assets\fonts\iconFonts\fa-regular-400.woff2" />
+    <None Include="Content\assets\fonts\iconFonts\fa-solid-900.eot" />
+    <None Include="Content\assets\fonts\iconFonts\fa-solid-900.ttf" />
+    <None Include="Content\assets\fonts\iconFonts\fa-solid-900.woff" />
+    <None Include="Content\assets\fonts\iconFonts\fa-solid-900.woff2" />
+    <None Include="Content\assets\scss\main.scss" />
+    <None Include="Content\assets\scss\partials\basic.scss" />
+    <None Include="Content\assets\scss\partials\pages\_datePicker.scss" />
+    <None Include="Content\assets\scss\partials\pages\_home.scss" />
+    <None Include="Content\assets\scss\partials\_mixins.scss" />
+    <None Include="Content\assets\scss\partials\_variables.scss" />
+    <None Include="packages.config" />
+    <None Include="Pages\home\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{38f7307e-9d6f-43a3-9548-b88a2b78c411}</SharePointProjectItemId>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{792d91cb-1c3e-4e7f-a19e-31869a30af63}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-3.5.0.min.map" />
+    <None Include="Scripts\jquery-3.5.0.slim.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{246bbb6e-a737-43b3-9d76-064096172da8}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0e665cf5-1ba4-445d-894b-a05bb651ec4a}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6e312838-bc2e-4bd9-bd7e-d7aeec6f5bb4}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{d3ae2d1e-d039-420d-92c2-b27fd44f0d96}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{7b3d3a9a-021b-44b6-bbfc-237771d207c7}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

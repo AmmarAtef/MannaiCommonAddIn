@@ -1,0 +1,111 @@
+// all genral style that will be appended to the whole app pages
+@font-face {
+  font-family: calibri;
+  src: url(../fonts/Calibri.ttf);
+}
+
+body{
+  font-family:Calibri, sans-serif;
+  color: $black-color;
+  font-size: $main-font-size;
+  .main-container{
+    background: url(../img/mainBg.png) center center no-repeat;
+    background-size: 100% auto;
+    background-position: 0px -75px;
+    padding: 100px 0;
+    background-color: $main-bg-color;
+  }
+  a {color: $bran-primary-color;}
+  .bold { font-weight: 700!important; }
+  .main-heading { @include mainHeading; }
+  .bord-btm { border-bottom: 1px solid $main-border-color;}
+  .bord-top { border-top: 1px solid $main-border-color;}
+  .text-primary { color: $bran-primary-color!important; }
+  .text-secondary { color: $bran-secondary-color!important; }
+  .text-white { color: $white-color!important; }
+  .text-light { color: $dark-gray-color!important; }
+  .text-right { text-align: right;}
+  .pointer { cursor: pointer;}
+  .btn-link {
+    color: $bran-primary-color!important;
+    text-decoration: none;
+    box-shadow: none!important;
+    &:hover{
+      color: darken($bran-primary-color,10%)!important;
+      text-decoration: underline;
+    }
+  }
+  .btn-primary{
+    background-color: $bran-primary-color!important;
+    border-color: $bran-primary-color!important;
+    &:hover{
+      background-color: darken($bran-primary-color,5%)!important;
+    }
+  }
+  .btn-outline-primary{
+    border-color: $bran-primary-color!important;
+    color: $bran-primary-color!important;
+    &:hover{
+      background-color: $bran-primary-color!important;
+      color: $white-color !important;
+    }
+  }
+  .cover-overlay{
+    top: 0;
+    left: 0;
+    @include gradientBG;
+  }
+  .outline-container { @include outlineContainer; }
+  .pl-20 {padding-left: 20px!important;}
+  .pl-30 {padding-left: 30px!important;}
+  .ml-20 {margin-left: 20px!important;}
+  .pr-0{padding-right: 0;}
+  .lSPager { display: none;}
+  .large-slider{
+    .lSAction{
+      a{
+        i{
+          opacity: 0.5;
+          &:hover{ opacity: 1; }
+        }
+        &.lSPrev{left: 0;}
+        &.lSNext{right: 0;}
+      }
+    }
+  }
+  .large-slider{
+    .lSSlideWrapper{
+      padding: 0 35px!important;
+    }
+  }
+  form{
+    .form-check-input:checked {
+      background-color: $bran-primary-color;
+      border-color: $bran-primary-color;
+    }
+  }
+  .menue-controler{
+    top: 15px;
+    left: 35px;
+    border: 1px solid;
+    padding: 5px 10px;
+    font-size: 34px;
+    border-radius: $main-border-radius;
+    line-height: 0;
+  }
+  .responsive-menue{
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    background-color: rgba($black-color, 0.8);
+    .close-menue{
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+    }
+    *{
+      color: $white-color;
+      font-size: calc(#{$main-font-size} + 2px);
+    }
+  }
+}

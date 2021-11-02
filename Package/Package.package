@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="d3ae2d1e-d039-420d-92c2-b27fd44f0d96" 
+        solutionId="d3ae2d1e-d039-420d-92c2-b27fd44f0d96" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="MannaiSPFX"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="7b3d3a9a-021b-44b6-bbfc-237771d207c7" />
+  </features>
+</package>
