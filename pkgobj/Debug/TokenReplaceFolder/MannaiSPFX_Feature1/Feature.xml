@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint Add-in Feature" Id="7b3d3a9a-021b-44b6-bbfc-237771d207c7" Scope="Web" Title="MannaiSPFX Feature1" Version="1.0.2.8">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint Add-in Feature" Id="7b3d3a9a-021b-44b6-bbfc-237771d207c7" Scope="Web" Title="MannaiSPFX Feature1" Version="1.0.3.0">
   <ElementManifests>
     <ElementManifest Location="Pages\Elements.xml" />
     <ElementFile Location="Pages\Default.aspx" />

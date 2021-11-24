@@ -435,7 +435,7 @@ function retrievePoll() {
     camlQuery.set_viewXml('<View><RowLimit>100</RowLimit></View>');
     collListItemPoll = oList.getItems(camlQuery);
 
-    clientContext.load(collListItemPoll, 'Include(Id,PollTitle,PollQuestions)');
+    clientContext.load(collListItemPoll, 'Include(Id,PollQuestion,PollChoices)');
 
     clientContext.executeQueryAsync(onQuerySucceededPoll, onQueryFailedPoll);
 }
@@ -448,8 +448,8 @@ function onQuerySucceededPoll(sender, args) {
 
     while (listItemEnumerator.moveNext()) {
         var oListItem = listItemEnumerator.get_current();
-        $("#QATitle").text(oListItem.get_item('PollTitle'));
-        arrayOfAnswers = oListItem.get_item('PollQuestions').match(/[^\r\n]+/g);
+        $("#QATitle").text(oListItem.get_item('PollQuestion'));
+        var arrayOfAnswers = oListItem.get_item('PollChoices').match(/[^\r\n]+/g);
         $("#fAnswer").text(arrayOfAnswers[0]);
         $("#sAnswer").text(arrayOfAnswers[1]);
     }
