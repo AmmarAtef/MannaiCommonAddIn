@@ -42,42 +42,6 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Content\assets\css\libs\all.css" />
-    <Content Include="Content\assets\css\libs\bootstrap.min.css" />
-    <Content Include="Content\assets\css\libs\jquery-ui.css" />
-    <Content Include="Content\assets\css\libs\lightslider.css" />
-    <Content Include="Content\assets\css\main.css" />
-    <Content Include="Content\assets\css\partials\basic.css" />
-    <Content Include="Content\assets\fonts\iconFonts\fa-brands-400.svg" />
-    <Content Include="Content\assets\fonts\iconFonts\fa-regular-400.svg" />
-    <Content Include="Content\assets\fonts\iconFonts\fa-solid-900.svg" />
-    <Content Include="Content\assets\img\calender-controls.png" />
-    <Content Include="Content\assets\img\departments\dep-1.jpg" />
-    <Content Include="Content\assets\img\departments\dep-2.jpg" />
-    <Content Include="Content\assets\img\departments\dep-3.jpg" />
-    <Content Include="Content\assets\img\departments\dep-4.jpg" />
-    <Content Include="Content\assets\img\departments\dep-5.jpg" />
-    <Content Include="Content\assets\img\departments\dep-6.jpg" />
-    <Content Include="Content\assets\img\dummy\agoda-logo.png" />
-    <Content Include="Content\assets\img\dummy\insgram-feeds.jpg" />
-    <Content Include="Content\assets\img\dummy\mainCover.jpg" />
-    <Content Include="Content\assets\img\dummy\profilePhoto.jpg" />
-    <Content Include="Content\assets\img\dummy\recent-update.jpg" />
-    <Content Include="Content\assets\img\dummy\weatherIcon.png" />
-    <Content Include="Content\assets\img\headSet-icon.png" />
-    <Content Include="Content\assets\img\mainBg.png" />
-    <Content Include="Content\assets\img\performance\1.png" />
-    <Content Include="Content\assets\img\performance\2.png" />
-    <Content Include="Content\assets\img\performance\3.png" />
-    <Content Include="Content\assets\img\performance\4.png" />
-    <Content Include="Content\assets\img\performance\5.png" />
-    <Content Include="Content\assets\img\performance\6.png" />
-    <Content Include="Content\assets\img\QTerminalsLogo.png" />
-    <Content Include="Content\assets\img\SalahIcon.png" />
-    <Content Include="Content\assets\js\libs\jquery-ui.min.js" />
-    <Content Include="Content\assets\js\libs\jquery.min.js" />
-    <Content Include="Content\assets\js\libs\lightslider.js" />
-    <Content Include="Content\assets\js\main.js" />
     <Content Include="Pages\home.aspx" />
     <Content Include="Pages\home\Elements.xml">
       <OpcRelationship>feature-elementmanifest</OpcRelationship>
@@ -89,25 +53,6 @@
     <Content Include="Scripts\jquery-3.5.0.slim.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.min.js" />
     <Content Include="Scripts\pnp.min.js" />
-    <None Include="Content\assets\fonts\Calibri.ttf" />
-    <None Include="Content\assets\fonts\iconFonts\fa-brands-400.eot" />
-    <None Include="Content\assets\fonts\iconFonts\fa-brands-400.ttf" />
-    <None Include="Content\assets\fonts\iconFonts\fa-brands-400.woff" />
-    <None Include="Content\assets\fonts\iconFonts\fa-brands-400.woff2" />
-    <None Include="Content\assets\fonts\iconFonts\fa-regular-400.eot" />
-    <None Include="Content\assets\fonts\iconFonts\fa-regular-400.ttf" />
-    <None Include="Content\assets\fonts\iconFonts\fa-regular-400.woff" />
-    <None Include="Content\assets\fonts\iconFonts\fa-regular-400.woff2" />
-    <None Include="Content\assets\fonts\iconFonts\fa-solid-900.eot" />
-    <None Include="Content\assets\fonts\iconFonts\fa-solid-900.ttf" />
-    <None Include="Content\assets\fonts\iconFonts\fa-solid-900.woff" />
-    <None Include="Content\assets\fonts\iconFonts\fa-solid-900.woff2" />
-    <None Include="Content\assets\scss\main.scss" />
-    <None Include="Content\assets\scss\partials\basic.scss" />
-    <None Include="Content\assets\scss\partials\pages\_datePicker.scss" />
-    <None Include="Content\assets\scss\partials\pages\_home.scss" />
-    <None Include="Content\assets\scss\partials\_mixins.scss" />
-    <None Include="Content\assets\scss\partials\_variables.scss" />
     <None Include="packages.config" />
     <None Include="Pages\home\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{38f7307e-9d6f-43a3-9548-b88a2b78c411}</SharePointProjectItemId>
@@ -126,13 +71,6 @@
     </None>
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Content\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{0e665cf5-1ba4-445d-894b-a05bb651ec4a}</SharePointProjectItemId>
-    </None>
-    <Content Include="Content\Elements.xml" />
-    <Content Include="Content\App.css" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\AppIcon.png">
@@ -161,6 +99,9 @@
     <AppManifestFile Include="AppManifest.xml">
       <SubType>Designer</SubType>
     </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ContentTypes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

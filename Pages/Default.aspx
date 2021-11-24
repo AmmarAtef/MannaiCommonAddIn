@@ -258,18 +258,18 @@
                   <!-- start of polls section -->
                   <section class="pl-30 polls">
                     <div class="main-heading">Today's Poll</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod?</p>
+                    <p id="QATitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod?</p>
                     <!-- start of polls form -->
                     <form>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="rollRB" id="rollRB_option1">
-                        <label class="form-check-label text-light" for="rollRB_option1">
+                        <label id="fAnswer" class="form-check-label text-light" for="rollRB_option1">
                           Lorem ipsum dolor sit
                         </label>
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="rollRB" id="rollRB_option2">
-                        <label class="form-check-label text-light" for="rollRB_option2">
+                        <label id="sAnswer" class="form-check-label text-light" for="rollRB_option2">
                           Lorem ipsum 
                         </label>
                       </div>

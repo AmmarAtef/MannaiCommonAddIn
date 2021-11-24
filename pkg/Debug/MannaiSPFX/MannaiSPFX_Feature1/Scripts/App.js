@@ -33,6 +33,7 @@ function initializePage() {
         retrieveQuickLinks();
         retrieveNews();
         retrieveNewJoiness();
+        retrievePoll();
     });
 
     // This function prepares, loads, and then executes a SharePoint query to get the current users information
@@ -419,3 +420,44 @@ function onQueryFailedNewJoinees(sender, args) {
 }
 
 
+
+
+
+var collListItemPoll;
+function retrievePoll() {
+    appWebUrl = decodeURIComponent(getUrlParam("SPAppWebUrl"));
+    hostWebUrl = decodeURIComponent(getUrlParam("SPHostUrl"));
+    var clientContext = new SP.ClientContext(appWebUrl);
+    var appContextSite = new SP.AppContextSite(clientContext, hostWebUrl);
+    var hostWeb = appContextSite.get_web();
+    var oList = hostWeb.get_lists().getByTitle("Polls");
+    var camlQuery = new SP.CamlQuery();
+    camlQuery.set_viewXml('<View><RowLimit>100</RowLimit></View>');
+    collListItemPoll = oList.getItems(camlQuery);
+
+    clientContext.load(collListItemPoll, 'Include(Id,PollTitle,PollQuestions)');
+
+    clientContext.executeQueryAsync(onQuerySucceededPoll, onQueryFailedPoll);
+}
+
+function onQuerySucceededPoll(sender, args) {
+
+    var listItemInfo = '';
+    var listItemEnumerator = collListItemPoll.getEnumerator();
+    var i = 0;
+
+    while (listItemEnumerator.moveNext()) {
+        var oListItem = listItemEnumerator.get_current();
+        $("#QATitle").text(oListItem.get_item('PollTitle'));
+        arrayOfAnswers = oListItem.get_item('PollQuestions').match(/[^\r\n]+/g);
+        $("#fAnswer").text(arrayOfAnswers[0]);
+        $("#sAnswer").text(arrayOfAnswers[1]);
+    }
+
+    //alert(listItemInfo.toString());
+}
+
+function onQueryFailedPoll(sender, args) {
+
+    alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+}
