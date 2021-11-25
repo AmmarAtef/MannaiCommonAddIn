@@ -1,0 +1,42 @@
+//  build gray sections 
+@mixin lightGrayBG($radius: $main-border-radius) {
+  background-color: $light-gray-color;
+  border-radius: $radius;
+}
+
+//  build sections transparent with border
+@mixin outlineContainer {
+  border: 1px solid $main-border-color;
+  border-radius: $main-border-radius;
+  padding: 5px;
+}
+
+//  build sections with gradient backgrounds
+@mixin gradientBG {
+  background: -moz-linear-gradient(45deg,  rgba(85,14,123,0.5) 0%, rgba(85,14,123,0.5) 18%, rgba(0,155,222,0.5) 100%);
+  background: -webkit-linear-gradient(45deg,  rgba(85,14,123,0.5) 0%,rgba(85,14,123,0.5) 18%,rgba(0,155,222,0.5) 100%);
+  background: linear-gradient(45deg,  rgba(85,14,123,0.5) 0%,rgba(85,14,123,0.5) 18%,rgba(0,155,222,0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d550e7b', endColorstr='#4d009bde',GradientType=1 );
+}
+
+// build the main headers with diffrent alignments
+@mixin mainHeading($alignment: initial) {
+  font-size: $heading-font-size;
+  text-align: $alignment;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+// make next and prev. actions for sliders
+@mixin drawSliderActions($BG) {
+  background: $BG;
+  height: 110%;
+  top: 0;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: $bran-primary-color;
+  font-size: 24px;
+}

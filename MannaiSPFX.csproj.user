@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SharePointSiteUrl>https://mannai.sharepoint.com/IntranetDemo/</SharePointSiteUrl>
     <OfficeAndSharePointStartAction>Google Chrome</OfficeAndSharePointStartAction>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>

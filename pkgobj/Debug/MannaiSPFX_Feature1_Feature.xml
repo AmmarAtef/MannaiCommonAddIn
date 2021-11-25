@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint Add-in Feature" Id="7b3d3a9a-021b-44b6-bbfc-237771d207c7" Scope="Web" Title="MannaiSPFX Feature1" Version="1.0.3.0">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint Add-in Feature" Id="7b3d3a9a-021b-44b6-bbfc-237771d207c7" Scope="Web" Title="MannaiSPFX Feature1" Version="1.0.3.5">
   <ElementManifests>
     <ElementManifest Location="Pages\Elements.xml" />
     <ElementFile Location="Pages\Default.aspx" />
@@ -17,6 +17,62 @@
     <ElementFile Location="Scripts\components.js" />
     <ElementManifest Location="Images\Elements.xml" />
     <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\assets\css\main.css" />
+    <ElementFile Location="Content\assets\css\libs\all.css" />
+    <ElementFile Location="Content\assets\css\libs\bootstrap.min.css" />
+    <ElementFile Location="Content\assets\css\libs\jquery-ui.css" />
+    <ElementFile Location="Content\assets\css\libs\lightslider.css" />
+    <ElementFile Location="Content\assets\css\partials\basic.css" />
+    <ElementFile Location="Content\assets\fonts\Calibri.ttf" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-brands-400.eot" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-brands-400.svg" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-brands-400.ttf" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-brands-400.woff" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-brands-400.woff2" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-regular-400.eot" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-regular-400.svg" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-regular-400.ttf" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-regular-400.woff" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-regular-400.woff2" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-solid-900.eot" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-solid-900.svg" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-solid-900.ttf" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-solid-900.woff" />
+    <ElementFile Location="Content\assets\fonts\iconFonts\fa-solid-900.woff2" />
+    <ElementFile Location="Content\assets\img\calender-controls.png" />
+    <ElementFile Location="Content\assets\img\headSet-icon.png" />
+    <ElementFile Location="Content\assets\img\mainBg.png" />
+    <ElementFile Location="Content\assets\img\QTerminalsLogo.png" />
+    <ElementFile Location="Content\assets\img\SalahIcon.png" />
+    <ElementFile Location="Content\assets\img\departments\dep-1.jpg" />
+    <ElementFile Location="Content\assets\img\departments\dep-2.jpg" />
+    <ElementFile Location="Content\assets\img\departments\dep-3.jpg" />
+    <ElementFile Location="Content\assets\img\departments\dep-4.jpg" />
+    <ElementFile Location="Content\assets\img\departments\dep-5.jpg" />
+    <ElementFile Location="Content\assets\img\departments\dep-6.jpg" />
+    <ElementFile Location="Content\assets\img\dummy\agoda-logo.png" />
+    <ElementFile Location="Content\assets\img\dummy\insgram-feeds.jpg" />
+    <ElementFile Location="Content\assets\img\dummy\mainCover.jpg" />
+    <ElementFile Location="Content\assets\img\dummy\profilePhoto.jpg" />
+    <ElementFile Location="Content\assets\img\dummy\recent-update.jpg" />
+    <ElementFile Location="Content\assets\img\dummy\weatherIcon.png" />
+    <ElementFile Location="Content\assets\img\performance\1.png" />
+    <ElementFile Location="Content\assets\img\performance\2.png" />
+    <ElementFile Location="Content\assets\img\performance\3.png" />
+    <ElementFile Location="Content\assets\img\performance\4.png" />
+    <ElementFile Location="Content\assets\img\performance\5.png" />
+    <ElementFile Location="Content\assets\img\performance\6.png" />
+    <ElementFile Location="Content\assets\js\main.js" />
+    <ElementFile Location="Content\assets\js\libs\jquery-ui.min.js" />
+    <ElementFile Location="Content\assets\js\libs\jquery.min.js" />
+    <ElementFile Location="Content\assets\js\libs\lightslider.js" />
+    <ElementFile Location="Content\assets\scss\main.scss" />
+    <ElementFile Location="Content\assets\scss\partials\_mixins.scss" />
+    <ElementFile Location="Content\assets\scss\partials\_variables.scss" />
+    <ElementFile Location="Content\assets\scss\partials\basic.scss" />
+    <ElementFile Location="Content\assets\scss\partials\pages\_datePicker.scss" />
+    <ElementFile Location="Content\assets\scss\partials\pages\_home.scss" />
   </ElementManifests>
   <UpgradeActions>
     <VersionRange>
@@ -24,6 +80,7 @@
         <ElementManifest Location="Pages\Elements.xml" />
         <ElementManifest Location="Scripts\Elements.xml" />
         <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
       </ApplyElementManifests>
     </VersionRange>
   </UpgradeActions>

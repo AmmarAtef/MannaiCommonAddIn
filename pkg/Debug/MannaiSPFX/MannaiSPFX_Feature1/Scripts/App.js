@@ -7,7 +7,7 @@ var Questions = [];
 var acountname;
 var assignmentId;
 var userId;
-
+var renderItems = 0;
 
 
 
@@ -33,7 +33,7 @@ function initializePage() {
         retrieveQuickLinks();
         retrieveNews();
         retrieveNewJoiness();
-        retrievePoll();
+        //retrievePoll();
     });
 
     // This function prepares, loads, and then executes a SharePoint query to get the current users information
@@ -70,7 +70,7 @@ function retrieveListItems() {
 }
 
 function onQuerySucceeded(sender, args) {
-
+    renderItems++;
     var listItemInfo = '';
     var listItemEnumerator = collListItem.getEnumerator();
     var i = 0;
@@ -132,7 +132,7 @@ function getPerformance() {
 
 
 function onQuerySucceededPerformance(sender, args) {
-
+    renderItems++
     var listItemInfo = '';
     var listItemEnumerator = collListItemPerformance.getEnumerator();
 
@@ -220,6 +220,7 @@ function onQueryFailedHotLine(sender, args) {
 
 var collListItemBanners;
 function retrieveBanners() {
+
     appWebUrl = decodeURIComponent(getUrlParam("SPAppWebUrl"));
     hostWebUrl = decodeURIComponent(getUrlParam("SPHostUrl"));
     var clientContext = new SP.ClientContext(appWebUrl);
@@ -236,7 +237,7 @@ function retrieveBanners() {
 }
 
 function onQuerySucceededBanners(sender, args) {
-
+    renderItems++
     var listItemInfo = '';
     var listItemEnumerator = collListItemBanners.getEnumerator();
     var i = 0;
@@ -279,7 +280,7 @@ function retrieveQuickLinks() {
 }
 
 function onQuerySucceededQuickLinks(sender, args) {
-
+    renderItems++;
     var listItemInfo = '';
     var listItemEnumerator = collListItemQuickLinks.getEnumerator();
     var i = 0;
@@ -332,7 +333,7 @@ function retrieveNews() {
 }
 
 function onQuerySucceededNews(sender, args) {
-
+    renderItems++
     var listItemInfo = '';
     var listItemEnumerator = collListItemNews.getEnumerator();
     var i = 0;
@@ -359,7 +360,7 @@ function onQuerySucceededNews(sender, args) {
 
         
     }
-
+    retrievePoll();
     //alert(listItemInfo.toString());
 }
 
@@ -454,6 +455,8 @@ function onQuerySucceededPoll(sender, args) {
         $("#sAnswer").text(arrayOfAnswers[1]);
     }
 
+
+    attachLighterSlide();
     //alert(listItemInfo.toString());
 }
 
@@ -461,3 +464,7 @@ function onQueryFailedPoll(sender, args) {
 
     alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
 }
+
+
+
+

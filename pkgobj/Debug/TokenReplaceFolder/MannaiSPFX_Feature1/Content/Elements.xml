@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\assets\css\main.css" Url="Content/assets/css/main.css" ReplaceContent="TRUE" />
+    <File Path="Content\assets\css\libs\all.css" Url="Content/assets/css/libs/all.css" ReplaceContent="TRUE" />
+    <File Path="Content\assets\css\libs\bootstrap.min.css" Url="Content/assets/css/libs/bootstrap.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\assets\css\libs\jquery-ui.css" Url="Content/assets/css/libs/jquery-ui.css" ReplaceContent="TRUE" />
+    <File Path="Content\assets\css\libs\lightslider.css" Url="Content/assets/css/libs/lightslider.css" ReplaceContent="TRUE" />
+    <File Path="Content\assets\css\partials\basic.css" Url="Content/assets/css/partials/basic.css" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\Calibri.ttf" Url="Content/assets/fonts/Calibri.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-brands-400.eot" Url="Content/assets/fonts/iconFonts/fa-brands-400.eot" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-brands-400.svg" Url="Content/assets/fonts/iconFonts/fa-brands-400.svg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-brands-400.ttf" Url="Content/assets/fonts/iconFonts/fa-brands-400.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-brands-400.woff" Url="Content/assets/fonts/iconFonts/fa-brands-400.woff" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-brands-400.woff2" Url="Content/assets/fonts/iconFonts/fa-brands-400.woff2" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-regular-400.eot" Url="Content/assets/fonts/iconFonts/fa-regular-400.eot" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-regular-400.svg" Url="Content/assets/fonts/iconFonts/fa-regular-400.svg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-regular-400.ttf" Url="Content/assets/fonts/iconFonts/fa-regular-400.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-regular-400.woff" Url="Content/assets/fonts/iconFonts/fa-regular-400.woff" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-regular-400.woff2" Url="Content/assets/fonts/iconFonts/fa-regular-400.woff2" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-solid-900.eot" Url="Content/assets/fonts/iconFonts/fa-solid-900.eot" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-solid-900.svg" Url="Content/assets/fonts/iconFonts/fa-solid-900.svg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-solid-900.ttf" Url="Content/assets/fonts/iconFonts/fa-solid-900.ttf" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-solid-900.woff" Url="Content/assets/fonts/iconFonts/fa-solid-900.woff" ReplaceContent="TRUE" />
+    <File Path="Content\assets\fonts\iconFonts\fa-solid-900.woff2" Url="Content/assets/fonts/iconFonts/fa-solid-900.woff2" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\calender-controls.png" Url="Content/assets/img/calender-controls.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\headSet-icon.png" Url="Content/assets/img/headSet-icon.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\mainBg.png" Url="Content/assets/img/mainBg.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\QTerminalsLogo.png" Url="Content/assets/img/QTerminalsLogo.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\SalahIcon.png" Url="Content/assets/img/SalahIcon.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\departments\dep-1.jpg" Url="Content/assets/img/departments/dep-1.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\departments\dep-2.jpg" Url="Content/assets/img/departments/dep-2.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\departments\dep-3.jpg" Url="Content/assets/img/departments/dep-3.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\departments\dep-4.jpg" Url="Content/assets/img/departments/dep-4.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\departments\dep-5.jpg" Url="Content/assets/img/departments/dep-5.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\departments\dep-6.jpg" Url="Content/assets/img/departments/dep-6.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\dummy\agoda-logo.png" Url="Content/assets/img/dummy/agoda-logo.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\dummy\insgram-feeds.jpg" Url="Content/assets/img/dummy/insgram-feeds.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\dummy\mainCover.jpg" Url="Content/assets/img/dummy/mainCover.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\dummy\profilePhoto.jpg" Url="Content/assets/img/dummy/profilePhoto.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\dummy\recent-update.jpg" Url="Content/assets/img/dummy/recent-update.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\dummy\weatherIcon.png" Url="Content/assets/img/dummy/weatherIcon.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\performance\1.png" Url="Content/assets/img/performance/1.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\performance\2.png" Url="Content/assets/img/performance/2.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\performance\3.png" Url="Content/assets/img/performance/3.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\performance\4.png" Url="Content/assets/img/performance/4.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\performance\5.png" Url="Content/assets/img/performance/5.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\img\performance\6.png" Url="Content/assets/img/performance/6.png" ReplaceContent="TRUE" />
+    <File Path="Content\assets\js\main.js" Url="Content/assets/js/main.js" ReplaceContent="TRUE" />
+    <File Path="Content\assets\js\libs\jquery-ui.min.js" Url="Content/assets/js/libs/jquery-ui.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\assets\js\libs\jquery.min.js" Url="Content/assets/js/libs/jquery.min.js" ReplaceContent="TRUE" />
+    <File Path="Content\assets\js\libs\lightslider.js" Url="Content/assets/js/libs/lightslider.js" ReplaceContent="TRUE" />
+    <File Path="Content\assets\scss\main.scss" Url="Content/assets/scss/main.scss" ReplaceContent="TRUE" />
+    <File Path="Content\assets\scss\partials\_mixins.scss" Url="Content/assets/scss/partials/_mixins.scss" ReplaceContent="TRUE" />
+    <File Path="Content\assets\scss\partials\_variables.scss" Url="Content/assets/scss/partials/_variables.scss" ReplaceContent="TRUE" />
+    <File Path="Content\assets\scss\partials\basic.scss" Url="Content/assets/scss/partials/basic.scss" ReplaceContent="TRUE" />
+    <File Path="Content\assets\scss\partials\pages\_datePicker.scss" Url="Content/assets/scss/partials/pages/_datePicker.scss" ReplaceContent="TRUE" />
+    <File Path="Content\assets\scss\partials\pages\_home.scss" Url="Content/assets/scss/partials/pages/_home.scss" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

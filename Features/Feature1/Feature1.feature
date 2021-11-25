@@ -4,5 +4,6 @@
     <projectItemReference itemId="792d91cb-1c3e-4e7f-a19e-31869a30af63" />
     <projectItemReference itemId="246bbb6e-a737-43b3-9d76-064096172da8" />
     <projectItemReference itemId="6e312838-bc2e-4bd9-bd7e-d7aeec6f5bb4" />
+    <projectItemReference itemId="217899a2-773d-409d-ab80-217ca83d40ec" />
   </projectItems>
 </feature>

@@ -13,17 +13,14 @@
     <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.js"></script>
+    <script src="../Scripts/jquery-3.5.0.min.js"></script>
 
-
-
-
-
+    <script src="../Content/assets/js/libs/jquery-ui.min.js"></script>
 
     <!-- Add your CSS styles to the following file -->
     <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
     <link href="../Content/assets/css/libs/bootstrap.min.css" rel="stylesheet" />
     <link href="../Content/assets/css/libs/all.css" rel="stylesheet" />
-    <link href="../Content/assets/css/libs/lightslider.css" rel="stylesheet" />
     <link href="../Content/assets/css/libs/jquery-ui.css" rel="stylesheet" />
 
     <link href="../Content/assets/css/main.css" rel="stylesheet" />
@@ -31,13 +28,12 @@
     <!-- Add your JavaScript to the following file -->
     <script src="../Scripts/pnp.min.js"></script>
     <script src="../Scripts/common.js"></script>
+    <script src="../Content/assets/js/main.js"></script>
     <script type="text/javascript" src="../Scripts/App.js"></script>
     <script src="../Scripts/components.js"></script>
     <!-- page scripts -->
-    <%--<script src="../Content/assets/js/libs/jquery.min.js"></script>--%>
-    <script src="../Content/assets/js/libs/jquery-ui.min.js"></script>
+    <link href="../Content/assets/css/libs/lightslider.css" rel="stylesheet" />
     <script src="../Content/assets/js/libs/lightslider.js"></script>
-    <script src="../Content/assets/js/main.js"></script>
 
     
 </head>
